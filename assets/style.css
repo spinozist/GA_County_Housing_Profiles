@@ -1,0 +1,222 @@
+body {
+    text-align: center;
+    background-color: black;
+    /* background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/uvwwIgO/rain-drop-with-street-colorful-traffic-lights-at-night-blur-bokeh-abstract-background-vintage-color-tone-cool-chill-wet-raining-season-concept_4wrtrqkqe__F0000.png); */
+    background-size: cover;
+}
+
+select, option, #input {
+    text-align: center;
+    height: 30px;
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+
+table {
+    width: 80%;
+    margin: auto auto 0px auto;
+    background-color: whitesmoke;
+    border: solid 3px;
+    border-color: cadetblue;
+    border-radius: 0px 0px 0px 5px;
+}
+
+
+.visible {
+    padding-bottom: 40px;
+}
+
+#indicator {
+    color:whitesmoke;
+
+}
+
+.loader {
+    border-top: 10px solid #f3f3f3; /* Light grey */
+    border-right: 10px solid #db34c5;
+    border-bottom: 10px solid #34e6a1;
+    border-left: 10px solid #d8db34;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 50px auto 25px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.csv-button {
+    float: right;
+    margin-right: 15%;
+    background-color: cadetblue;
+    color: whitesmoke;
+    border: solid;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px;
+    margin-top: 0px;
+    border-color: cadetblue;
+}
+
+.csv-button-active {
+    float: right;
+    margin-right: 15%;
+    background-color: peru;
+    color: whitesmoke;
+    border: solid;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px;
+    margin-top: 0px;
+    border-color: #34e6a1;
+}
+
+/* .csv-button:hover {
+    color: orange;
+} */
+
+#downloadAll {
+    /* float: right; */
+    margin: 15px auto 10px auto;
+    background-color: cadetblue;
+    color: whitesmoke;
+    padding: 10px;
+    border: solid;
+    border: 3px;
+    border-radius: 5px;
+    border-color: cadetblue;
+}
+
+#downloadAll:hover {
+    background-color: #db34c5;
+    border-color: #db34c5;
+}
+
+/* #downloadAll:hover {
+    color: orange;
+} */
+
+.band {
+    background-color: lightgray;
+}
+
+/* .table-name {
+    float: left;
+    margin-left: 10%;
+} */
+
+#cityTitle {
+    color: cadetblue;
+    font-size: 40px;
+    margin: 40px 10px 0px 10px;
+}
+
+#title-box > h3 {
+    /* text-align: center; */
+    color: whitesmoke;
+    line-height: 10px;
+}
+
+#submit-button {
+    margin: 30px auto 20px auto;
+    width: 120px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: whitesmoke;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(63, 68, 143);
+    background-color: rgb(63, 68, 143);
+}
+
+#submit-button:hover {
+    border:solid;
+    border-width: 2px;
+    border-color: whitesmoke;
+}
+
+.container {
+    background-color: whitesmoke;
+    opacity: .75;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    /* padding: 10px; */
+}
+
+#search-box {
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#bottom {
+    background-color: cadetblue;
+    /* height: 20px; */
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px 20px 40px 20px;
+    /* margin-top: 40px; */
+
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: whitesmoke;
+    font-style: bold;
+}
+
+#chart-title {
+    color: cadetblue;
+}
+
+.table-name, 
+h2 {
+    color: whitesmoke;
+    font-size: 24px;
+    margin: 30px auto 0px auto;
+    background-color: cadetblue;
+    width: 70%;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+}
+
+h4 {
+    color: whitesmoke;
+}
+
+#data-source-label {
+    margin-bottom: -20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 99%;
+        margin-top: 5px;
+    }
+
+    h1,
+    #cityTitle {
+        padding: 0px 5px 0px 5px;
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 60%;
+    }
+}
