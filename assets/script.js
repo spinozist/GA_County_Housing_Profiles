@@ -388,7 +388,7 @@ window.onload = function () {
         "Occupied housing units",
         "Utility gas",
         "Bottled, tank, or LP gas",
-        "Electricity",
+        "Electricounty",
         "Fuel oil, kerosene, etc.",
         "Coal or coke",
         "Wood",
@@ -501,7 +501,7 @@ window.onload = function () {
 
                     $(`#table-box`).empty()
                         .append(`
-                        <h1 id="cityTitle">${input}</h1>
+                        <h1 id="countyTitle">${input}</h1>
                         <button id="downloadAll">Download ALL Tables</button>
                         `);
 
@@ -601,7 +601,7 @@ window.onload = function () {
                                 var header = `**${tableName} data for ${input}**`
                                 var csv = [];
                                 var rows = document.querySelectorAll(`#table${tableID} tr`);
-                                var footer1 = `Accessed via Atlanta Regional Commission (ARC)'s Georgia City Housing Profile Tool`;
+                                var footer1 = `Accessed via Atlanta Regional Commission (ARC)'s Georgia County Housing Profile Tool`;
                                 var footer2 = `Data source: US Census / American Community Survey / 5-year estimates / 2012-16`;
 
                                 csv.push(header.toUpperCase());
@@ -625,28 +625,28 @@ window.onload = function () {
                             };
 
                             var shortTableName = tableName.replace(/\s/g, '');
-                            var shortCityName = input.replace(/\s/g, '').replace(/-/g, '');
+                            var shortCountyName = input.replace(/\s/g, '').replace(/-/g, '');
 
-                            if (shortCityName.length > 15) {
-                                shortCityName = shortCityName.substring(0, 14);
+                            if (shortCountyName.length > 15) {
+                                shortCountyName = shortCountyName.substring(0, 14);
                             }
 
-                            var filename = `${shortTableName}-${shortCityName}.csv`
+                            var filename = `${shortTableName}-${shortCountyName}.csv`
 
                             if (tableName === "Year Householder Moved Into Unit") {
-                                filename = `YearMovedIn-${shortCityName}.csv`
+                                filename = `YearMovedIn-${shortCountyName}.csv`
                             };
 
                             if (tableName === "Selected Monthly Owner Costs (SMOC)") {
-                                filename = `SMOC-${shortCityName}.csv`
+                                filename = `SMOC-${shortCountyName}.csv`
                             };
 
                             if (tableName === "Selected Monthly Owner Costs as a Percentage of Household Income (SMOCAPI)") {
-                                filename = `SMOCAPI-${shortCityName}.csv`
+                                filename = `SMOCAPI-${shortCountyName}.csv`
                             };
 
                             if (tableName === "Gross Rent as a Percentaga of Household Income (GRAPI)") {
-                                filename = `GRAPI-${shortCityName}.csv`
+                                filename = `GRAPI-${shortCountyName}.csv`
                             };
 
                             exportTableToCSV(filename);
@@ -696,13 +696,13 @@ window.onload = function () {
 
                         console.log(`You clicked to download CSV for ALL tables of ${input}.`);
 
-                        var shortCityName = input.replace(/\s/g, '').replace(/-/g, '');
+                        var shortCountyName = input.replace(/\s/g, '').replace(/-/g, '');
 
-                        if (shortCityName.length > 15) {
-                            shortCityName = shortCityName.substring(0, 14);
+                        if (shortCountyName.length > 15) {
+                            shortCountyName = shortCountyName.substring(0, 14);
                         };
 
-                        var filename = `HousingProfile-${shortCityName}.csv`;
+                        var filename = `HousingProfile-${shortCountyName}.csv`;
                         var csv = [];
 
 
@@ -710,7 +710,7 @@ window.onload = function () {
                             var header = `**Housing Profile for ${input}**`
 
 
-                            var footer1 = `Accessed via Atlanta Regional Commission (ARC)'s Georgia City Housing Profile Tool`;
+                            var footer1 = `Accessed via Atlanta Regional Commission (ARC)'s Georgia County Housing Profile Tool`;
                             var footer2 = `Data source: US Census / American Community Survey / 5-year estimates / 2012-16`;
 
                             csv.push(header.toUpperCase());
