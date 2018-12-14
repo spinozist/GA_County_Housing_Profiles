@@ -691,7 +691,7 @@ window.onload = function () {
                             "Selected Monthly Owner Costs (SMOC)",
                             "Selected Monthly Owner Costs as a Percentage of Household Income (SMOCAPI)",
                             "Gross Rent",
-                            "Gross Rent as a Percentaga of Household Income (GRAPI)"
+                            "Gross Rent as a Percentage of Household Income (GRAPI)"
                         ]
 
                         console.log(`You clicked to download CSV for ALL tables of ${input}.`);
@@ -753,7 +753,7 @@ window.onload = function () {
 
             var apiKey = `106872a18b40c2368c03c0b84de5322f9e09b710`
 
-            var queryURL = `https://api.census.gov/data/2016/acs/acs5/profile?key=${apiKey}&get=group(DP04)&for=county:${countyID}&in=state:13`;
+            var queryURL = `https://api.census.gov/data/2017/acs/acs5/profile?key=${apiKey}&get=group(DP04)&for=county:${countyID}&in=state:13`;
 
             $.ajax({
                 url: queryURL,
