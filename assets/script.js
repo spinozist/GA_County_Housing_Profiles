@@ -753,7 +753,7 @@ window.onload = function () {
 
             var apiKey = `106872a18b40c2368c03c0b84de5322f9e09b710`
 
-            var queryURL = `https://api.census.gov/data/2017/acs/acs5/profile?key=${apiKey}&get=group(DP04)&for=county:${countyID}&in=state:13`;
+            var queryURL = `https://api.census.gov/data/2016/acs/acs5/profile?key=${apiKey}&get=group(DP04)&for=county:${countyID}&in=state:13`;
 
             $.ajax({
                 url: queryURL,
